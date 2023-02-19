@@ -346,193 +346,225 @@ template {
 
 [hidden] {
   display: none;
+} /* 
+/*--------------------------------------------End Normalize CSS Section---------------------------------------------*/
+
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+* {
+  box-sizing: border-box;
 }
 
-
-/*
-Colors used:
-Primary Color (charcoal): #282A36;
-Secondary Color (grey): #7E7F86;
-Tertiary Color (ashes): #EAEAEB;
-*/
-
-/* fonts used:
-
-    Lato, sans-serif; light
-    font-family: lato, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-
-    Lato Lightz; Regular
-    font-family: lato, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    Lato , sans-serfi; Semibold
-    font-family: lato, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-
-    BookmanJFPro Roman
-    font-family: "bookman-jf-pro", serif;
-    font-weight: 400;
-    font-style: normal;
-
-*/
-
-
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
 
 body {
-    background-color: #ffffff;
-    font-family: lato, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 31px;
-    color:#282A36
-    }
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.8; /* Sets the line-height to 1.6 * the font-size */
+  color: #282A36;
+}
 
-h1, h2, h3, h4 
-    {
-    line-height: 1.4;
-    }
-    
-    
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
 
 h1  {
     font-family: "bookman-jf-pro", serif;
     font-weight: 400;
     font-style: normal;
     color:#282A36;
-    font-size: 2.25em;
+    font-size: 2.75em;
     color:#282A36;
     }
-        
-/* h1-header blue grey*/
 
-.heading-1 
-{color: #6e8091;}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
 
 
 h2  {
     font-family: "bookman-jf-pro", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.75em;
+    font-size: 2.25em;
+    }
+
+h3 {
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    font-style: normal;font-size: 1.75em;
 }
 
-h3  {
-     font-family: "bookman-jf-pro", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.35em;
-
-    }
-
-h4  {
+h4 {
     font-family:  "bookman-jf-pro", serif;
     font-weight: 400;
-    font-style: normal;
-    font-size: 1.35em;
-    }
+    font-style: normal;font-size: 1.35em;
+}
 
 
-
- /* ESSENTIAL for SETTING THE IMAGE WIDTH */
+/*setting images to full-width*/
 img {
   width: 100%;
 }
 
- /* STYLING HYPERLINKS*/
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
-    font-family: lato, sans-serif;
-    font-weight: 400;
-    color: #282A36;
-    letter-spacing: 1px;
-    font-size: 17px;
-    text-transform: uppercase;
-    text-decoration: none; /* No underlining */
+  color: #7E7F86;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #282A36;
 }
 
-
-a:hover {
-            text-transform: uppercase;
-            color: #EAEAEB;
-            text-decoration: none;
-        } 
+/*style the current nav item green*/
+.active a {
+    color: #282A36;
+}
 
 a:active { /* selected link */
-            color: #EAEAEB;
-            text-transform: uppercase;
-            text-decoration: none;
-        }
+  color: #282A36;
+}
 
-
-/* STYLING FOOTER EMAIL & PHONE LINKS*/
-a.contact {
-    font-family: lato, sans-serif;
-    font-weight: 400;
-    color: #282A36;
-    font-size: 17px;
-    text-transform: none;
-    text-decoration: none; /* No underlining */
+/*Pseudo classes for Accessibility for Across the Web*/
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
 }
 
 
-a.contact:hover {
-            text-transform: none;
-            text-decoration: none;
-            color: #EAEAEB;
-        } 
-
-a.contact:active { /* selected link */
-            color: #EAEAEB;
-            text-transform: none;
-            text-decoration: none;
-        }
-
-
-    
- /* STYLING BUTTONS*/
-/*STYLING FOR PROJECT LINK BUTTONS*/
+/*CSS code for the button class*/
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: transparent;
-  color: #282A36; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 16px;
-  border: 2px solid #282A36;
-  letter-spacing: 1px;
-  font-size: 15px;
-}
-
-.button:hover {
-  background-color: #282A36;
-  color: #ffffff;
-}
-
-
-
-/*STYLING NAVIGATION TEXT*/
-
-a.nav {
-    font-family: lato, sans-serif;
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #282A36; /* needed to override the default link color */
     font-weight: 400;
-    color: #282A36;
-    font-size: 17px;
-    text-transform: none;
-    text-decoration: none; /* No underlining */
-    }
-            
-a.nav:hover {
-            text-transform: none;
-            text-decoration: none;
-            color: #EAEAEB;
-        } 
-    
-a.nav:active { /* selected link */
-           text-transform: none;
-           text-decoration: none;
-           color: #EAEAEB;
-        
+    padding: 20px;
+    border: 2px solid #282A36; /* width of the border, type, color */
 }
+
+/*button class hover and active state*/
+.button:hover {
+    background-color: #282A36;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    background-color: #282A36;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*button rules for the mailto button*/
+.button.contact {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: transparent;
+    letter-spacing: 1.5px;
+    color: #282A36; /* needed to override the default link color */
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+    border: 2px solid #282A36; /* width of the border, type, color */
+}
+}
+
+/*button class hover and active state*/
+
+.button.contact:hover {
+   background-color: #282A36;
+   color: #ffffff;
+   text-decoration: none;
+}
+
+.button.contact:active {
+   background-color: #282A36;
+   color: #ffffff;
+   text-decoration: none;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
+/*style the <header> element*/
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+/*style the logo*/
+header .logo {
+  max-width: 250px;
+}
+
+/*Navigation Styling*/
+nav {
+  display: inline-block;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+    font-weight: 400;  
+    padding: 0 15px;
+    text-transform: none;
+    font-weight: 500;
+    color: #7E7F86;
+}
+
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/*Style the social icons*/
+.social {
+  list-style-type: none;
+  padding: 0;
+  margin-left: -10px;
+}
+
+.social li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.social img {
+  height: 32px;
+  width: 32px;
+}
+
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #7E7F86; }
