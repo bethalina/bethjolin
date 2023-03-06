@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">    
-  <head>
-    <meta charset="utf-8">
+<html lang="en" dir="ltr">  
+    
+    
+  <head><!-- Note:primarily holds information for machine processing,not human-readability-->
+    <meta charset="utf-8"><!--this code fixed shrinkage issues-->
     <meta name="author" content="Beth Jolin">
     <meta name="description" content="This is the about page of my website.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/svg/jB.svg" rel="shortcut icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/svg/jB.svg" rel="shortcut icon"><!--link to jb logo-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-      
-    <link rel="stylesheet" href="https://use.typekit.net/oio6qje.css">
-      
-    <title>Beth Jolin UI/UX Designer/Graphic Designer</title>
+     <!--link to normalize css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--link to internal css stylesheet-->
+    <link rel="stylesheet" href="https://use.typekit.net/oio6qje.css"><!--link to adobe fonts-->      
+    <title>About Beth Jolin, Web &amp; graphic designer, UI/UX Designer</title>
   </head>
   <body id="about-page">
     <!-- For the header -->
@@ -33,81 +34,128 @@
 
     <main>
         <!-- For the hero section -->
-        <div id="hero" style="margin-bottom: 40px;">
+          <!-- For the hero section -->
+    <div id="hero">
             <div class="container">
-                <h1>About me</h1>
-
+                <div id="greeting">
+                 <h1><span>Hello, </span>I'm Beth</h1></div>
+                <h4>I love creating engaging, simple and inspirational design solutions.</h4>
             </div>
         </div>
-        <div class="container">
-            <div id="story"><!--For the image, My Story and Skills and tools sections-->           
-                    <div><!--For My Story and Skills and tools sections-->
-                        <div class="row"><!--row one-->
-                            <picture><!--For students, the images below should be updated with real images-->
-                              <source srcset="img/beth.jpg" media="(max-width:767px)">
-                              <img src="img/beth.jpg" alt="Headshot">
-                            </picture>
-                            
-                            <h1>Hello, I'm Beth</h1>
-                            
-                            <h3>I love creating engaging, simple and inspirational design solutions.</h3>
-                            
-                            <p>My work combines a strong graphic design background, oodles of research and an uncanny intuitive ability to narrate my clients ideas successfully whatever the medium.</p>
+        
+<div id="story"><!--For the image, My Story and Skills and tools sections-->   
+     <div class="container">
+         <!--about me -->
+         <div class="row" style="margin-bottom: 20px;"> <!--row for -->
+             <div class="column col-md-6 col-lg-6" style="padding: 10px; margin-bottom: 20px;"> <!--holds picture-->
+   
+                 
+                  <picture class="potrait"> <source srcset="img/beth.jpg" media="(max-width:767px)">
+                  <img src="img/beth.jpg" alt="Headshot"></picture>   
+                  </div>
+             
+             <div class="column col-md-6 col-lg-6" style="padding-top: 20px; padding-left: 10px; padding-right: "><!--holds story-->
+                  <p>My work combines a strong graphic design background, oodles of research and an uncanny intuitive ability to narrate my clients ideas successfully whatever the medium.</p>
 
-                            <p>I believe that great design solutions are the result of a fluid collaboration between a team of  individuals, and innumerable failed prototypes. Designer, client, and users must all take a seat at the table to ensure a valuable product. I find inspiration in my everyday things from a carefully crafted beer label, to the patterns found on the back of a Red Bellied Woodpecker.</p>
+                   <p>I believe that great design solutions are the result of good communication and collaboration between a team of individuals. Designer, client, and users must all take a seat at the table to ensure a valuable product. I find inspiration in my everyday things from a vintage fruit box, to the zig zag pattern found on the back of a Red Bellied Woodpecker.</p>
 
-                            <p>When not immersed in a design project you will find me stalking wildlife, particularly those that are feathered. Nature and meditation are how I create balance in my life, and where I find inspiration. I am especially passionate and curious about our own innate ability to heal ourselves. I am an avid walker, runner, bicyclist, and swimmer. I also enjoy cooking locally sourced meals for family and friends.</p>
-                            <a href=files/bethJolinResume.pdf class="button" target="_blank">Resume</a>
-                        </div>
-                        <div class="row"><!--row two-->
-                            <h2>Skills &amp; Tools</h2>
-                            <div class="col-md-6"><!--Column two, row one-->
-                                <h3>Relevant Skills</h3>
-                                <ul>
-                                    <li>Illustration</li>
-                                    <li>User Research</li>
-                                    <li>Rapid Prototyping</li>
-                                    <li>Usability Testing</li>
-                                    <li>Branding</li>
-                                    <li>Style Guides</li>
-                                    <li>Wireframing</li>
-                                    <li>Prototyping</li>
-                                    <li>Writing &amp; Editing</li>
-                                    <li>Photoshop Manipulation &amp; Color Correction</li>
-                                    <li>Expert Print Production Skills</li>
-                                </ul>
+                   <p>When not immersed in a design project you will find me stalking wildlife, particularly those that are feathered. Nature and meditation are how I create balance in my life, and where I find inspiration. I am especially passionate and curious about our own innate ability to heal ourselves. I am an avid walker, runner, bicyclist, and swimmer. I also enjoy cooking locally sourced vegan &amp; vegetarian meals for family and friends.</p>
+                    <a href=files/bethJolinResume.pdf class="button" target="_blank">Resume</a>
+               </div> 
+  
+            </div>
+                 <div class="row"><!--row two-->
+                     <div class="col-md-6" style="padding-left: 30px;"><!--Column two, row one-->
+                            <h3>Skills</h3>
+<!--this styling does not work when i put this in css? /: -->
+<style> 
+.skill-button {
+    
+  border: none;
+  color: #282A36;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px 4px;
+  border-radius: 30px;
+
+}
+.row-button {
+  margin: 3px 0; /* 25px top and bottom, 0 left and right */
+}
+                             
+</style>
+                         <div class="row-button">
+                             <button class="skill-button">UI/UX</button>
+                            <button class="skill-button">Illustration</button>
+                            <button class="skill-button">User Research</button>
+                          </div>
+                         <div class="row-button">
+                             <button class="skill-button">Rapid Prototyping</button>
+                            <button class="skill-button">Usability Testing</button>
+                         </div>
+                         
+                         <div class="row-button">                              
+                             <button class="skill-button">Branding</button>
+                            <button class="skill-button">Style Guides</button>
+                            <button class="skill-button">Wireframing</button>
+                            </div>
+                          <div class="row-button">                              
+                            <button class="skill-button">Expert Print Production Skills</button>
+                            <button class="skill-button">Prototyping</button>
+                            </div>
+                           <div class="row-button">                              
+                             <button class="skill-button">Photoshop Manipulation &amp; Color Correction</button>
+                            </div>
+                           <div class="row-button">                              
+                             <button class="skill-button">Creative Writing &amp; Editing</button>
+                            <button class="skill-button">Frontend Dev</button>
+                            </div>
+
                             </div>
                             <div class="col-md-6"><!--Column two, row two-->
-                                <h3>Tools I use</h3>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Adobe Indesign</li>
-                                    <li>Adobe Photoshop</li>
-                                    <li>Adobe Illustrator</li>
-                                    <li>Adobe Acrobat Pro</li>
-                                    <li>Adobe XD</li>
-                                    <li>Plone</li>
-                                    <li>Brackets</li>
-                                    <li>Github</li>
-                                </ul>
+                                <h3>Tools</h3>
+                            <div class="row-button">
+                             <button class="skill-button">Figma</button>
+                            <button class="skill-button">Adobe Indesign</button>
+                          </div>
+                                
+                           <div class="row-button">
+                             <button class="skill-button">Adobe Photoshop</button>
+                            <button class="skill-button">Adobe Illustrator</button>
+                          </div>
+                                
+                            <div class="row-button">
+                             <button class="skill-button">Adobe Acrobat Pro</button>
+                            <button class="skill-button">Adobe XD</button>
+                          </div>
+                                 <div class="row-button">
+                             <button class="skill-button">Plone</button>
+                            <button class="skill-button">Brackets</button>
+                            <button class="skill-button">Github</button>
+
+                          </div>
+
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div> <!--end of row 2-->
+                    </div> <!--end of container-->
+                </div><!--end of about me section-->
+
     </main>
 
 
-<!-- For the footer  -->
 	<footer id="contact" style="clear: both;">
 		<div class="container">
-            <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;">
+            <div class="row" style="border-bottom: 1px solid #ffffff; margin-bottom: 20px;">
                 <div class="col-md-3">
-                    <h3>Beth Jolin Design</h3>
+                <h3>Beth Jolin Design</h3>
                 </div>
                 <div class="col-md-3"></div>
                 <div class="col-md-3">
-                    <img src="img/svg/jB.svg" class="logo" alt="Logo" >
+                <img src="img/svg/jB_white.svg" class="logo" alt="Logo" >
                 </div>
             </div>
             
@@ -116,46 +164,59 @@
                     <p>Central Wisconsin based graphic &amp; web designer, UI/UX designer, illustrator, and nature lover.</p>
                     <p>&copy;2023 Beth Jolin Design. <span>All rights reserved.</span></p>
                 </div>
+
                 <div class="col-md-3">
-                    <p><a href="tel:+9206599357">(920) 659-9357</a></p>
-                    <p><a href="mailto:hello@bethjolin@gmail.com">hello@bethjolin@gmail.com</a></p>
-                    <p>On the Lake <span>Neshkoro, Wisc. 54960</span></p>
+                    <p><span>Have a project in mind that you need help with? Shoot me a message at my email address. </span></p>
+
+                <p><a href="mailto:hello@bethjolin@gmail.com">hello@bethjolin@gmail.com</a></p>
                 </div>
                 <div class="col-md-3" style="float: right;">
-                    <ul class="social" style="float: right;">
+                    <ul class="social" style="float: right;" >
                     <!--Social Media Layout and Placeholders-->
-                    <!--For students, the images below should be updated with real svgs and links should be updated-->
-                        <li>
+<!--styling does not work when I insert it into the CSS styelsheet, it looks like the solution maybe js-->
+<style>    
+#linkedin:hover {
+    content: url(img/svg/grey_inkedin.svg);
+}
+#behance:hover {
+    content: url(img/svg/grey_behance.svg);
+}
+#instagram:hover {
+    content: url(img/svg/grey_instagram.svg);
+}
+#github:hover {
+    content: url(img/svg/grey_github.svg);
+}
+
+ </style>
+                        <li >
                             <a href="https://www.linkedin.com/in/beth-jolin-014214156/" target="_blank">
-                                <img src="img/svg/8546794_linkedin_icon.svg" alt="LinkedIn">
+                                <img id="linkedin" src="img/svg/white_linkedin.svg" alt="LinkedIn">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.behance.net/twiinbethjeb30" target="_blank">
-                                <img src="img/svg/8546763_behance_square_icon.svg" alt="Behance">
+                                <img id="behance"src="img/svg/white_behance.svg" alt="Behance">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/bee_true_tou/">
-                                <img src="img/svg/8546742_instagram_icon.svg" alt="Instagram">
+                                <img id="instagram" src="img/svg/white_instagram.svg" alt="Instagram">
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/bethalina">
-                                <img src="img/svg/8546736_github_icon.svg" alt="GitHub">
+                                <img id="github" src="img/svg/white_github.svg" alt="GitHub">
                             </a>
                         </li>
-                        <li>
-                            <a href="https://dribbble.com/Bee_Kind/collections">
-                                <img src="img/svg/8546912_dribbble_icon.svg" alt="Dribble">
-                            </a>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
 
         </div>
-        
+              
+
 	</footer>
   </body>
 </html>
