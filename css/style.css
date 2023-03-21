@@ -13,7 +13,7 @@ body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
   /*font-family: 'Lato', sans-serif;*/
-  font-size: 18px; /* Sets the font size to 16px */
+  font-size: 20px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 2.0; /* Sets the line-height to 1.6 * the font-size */
   color: #282A36;
@@ -55,12 +55,22 @@ h3 {
 
 h4 {
     font-family: "lato", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    font-style: normal;
+    color:#282936;
+}
+
+h5 {
+    font-family: "lato", sans-serif;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
-    color:#7E7F86;
+    text-transform: uppercase;
+    color:#282936;
+    letter-spacing: 1.5px;
+    
 }
-
 #index-page h3{ /*fix spacing below project headers on index page*/
     margin-bottom: 10px;
 }
@@ -69,7 +79,8 @@ h4 {
     display: block;
     color:#ffffff;
     letter-spacing: 1.5px;
-    margin-top: 0;}
+    margin-top: 0;
+}
        
 #about-page h3 { margin-top: 0;}
 
@@ -175,7 +186,7 @@ a:focus {
 
 /*email contact in footer styling, hover and active state */
 
-#contact a  {  /*stylize email linke desktop size*/
+#contact a  {  /*stylize email link desktop size*/
    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
    background-color: transparent;
    font-family: "bookman-jf-pro", serif;
@@ -193,7 +204,46 @@ a:focus {
     color:#7E7F86;
 }
 
-/* social media class hover and active state*/
+/* skill & tool text styling*/
+
+.skill-button {
+    
+  border: none;
+  color: #282A36;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px 4px;
+  border-radius: 30px;
+
+}
+.row-button {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+                             
+/* social media icon styling*/
+
+#linkedin:hover { /* (../) tells the CSS to go back one directory and than into the image directory */
+    content: url(../img/svg/grey_inkedin.svg);
+}
+#behance:hover {
+    content: url(../img/svg/grey_behance.svg);
+}
+#instagram:hover {
+    content: url(../img/svg/grey_instagram.svg);
+}
+#github:hover {
+    content: url(../img/svg/grey_github.svg);
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+
 
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -203,18 +253,23 @@ a:focus {
 /*style the <header> element*/
 header {
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  /*box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75); how to put a shadow on the bottom of the header/nav area */
+  /* text-align: center; */
+  padding: 10px 0 4px; /* top padding 10px, r & l padding = 0, bottom = 4px */
+  position: fixed;
+  background-color:#ffffff;
+  width:100%; 
+  /* box-shadow; *80px 7px 5px 0px rgba(50, 50, 50, 0.75); how to put a shadow on the bottom of the header/nav area */
 }
 
 /*style the logo*/
 header .logo {
   max-width: 50px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
+  height: 24px;
+  height: 28px;  
+
 }
 
 /*style the top logo on hover*/
@@ -222,26 +277,17 @@ header .logo:hover {
   opacity: 0.8;
 }
 
-/*style the footer logo on hover*/
-footer .logo {
-  max-width: 50px;
-}
-
-
 /*Navigation Styling*/
 nav {
   font-size: 18px;
-    display: inline-block;
-  width: 100% /*changed*-thursday*/
 }
 
+
+/*removes margins & padding on mobile screens */
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -254,7 +300,7 @@ nav > ul > li > a {
 
 #hero {
   background-color: #ffffff;
-  padding: 40px 0;
+  padding: 0px;
   display: inline-block;
   width: 100%;
 }
@@ -275,12 +321,17 @@ nav > ul > li > a {
 
 #hero h4 {
    text-align: center;/* Centers text on mobile */
+    font-size: 24px;
+    color: #282A36;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
 
 
 #contact span {
   display: block;
 }
+
 
 #contact {
     background-color: #282A36;
@@ -293,6 +344,7 @@ nav > ul > li > a {
     letter-spacing: 2px;
     line-height: 1.5;
 }
+
 
 
 /*Style the social icons*/
@@ -314,9 +366,10 @@ nav > ul > li > a {
 }
 
 #story img { /*stlize headshot*/
-    float: left;
-    width: 33%;
-    margin-left: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   }
@@ -340,6 +393,10 @@ nav > ul > li > a {
   margin: 3px 0; /* 25px top and bottom, 0 left and right */
 }
 
+main {
+  padding-top: 89px; /* pushes the main conent down on mobile so it is visible below the header */
+}
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /* Layout styling */
@@ -348,9 +405,11 @@ nav > ul > li > a {
   padding: 0 15px;
 }
 
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
+margin: 50px 0px;
+} /*stylinging mobile rows */
+
 
 .deskView {
   display: none;
@@ -361,6 +420,54 @@ nav > ul > li > a {
 }
 
 #work .row { padding-bottom: 20px; }
+
+/* styling mobile menu */
+/*hides all list elements in top navigation menu except for the hamburger icon (last-child)*/
+.navtoggle li:not(:last-child) { 
+  display: none;
+}
+
+/* positions hamburger icon to the right of my logo */
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/*positions hamburger menu & stylizes it */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  /* padding-right: 0; can add if i want hamburger to nudge to the right */
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+ /*stylizes toggle menu */
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #e9a7a1;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+/*column padding for mobile*/
+#padding-top {
+        padding-top: 40px;
+    }
+
+footer .logo {
+  float: none;
+  max-width: 50px;
+  margin-top: -75px;
+  margin-bottom: 15px;
+}
 
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
@@ -433,12 +540,14 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   body {
-    font-size: 16px;
+    font-size: 20px;
   }
     
   header {
     text-align: unset;/* Removes the text-align: center attribute assigned */
-    padding: 20px 0 13px;
+    padding: 10px /*padding-top*/ 
+        0 /*padding l & r */ 
+        13px; /*padding-bottom */
   }
 
   nav {
@@ -453,44 +562,90 @@ Medium devices (640px and larger)
   .mobileView {
     display: none;
   }
-
-
+    
 .col-md-6 {
-    width: 50%;
-    float: left;
+    width:50%;
+    float:left;
     padding-bottom: 40px;
+    }
+
+
+#story img { /*stlize headshot for medium*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   }
     
-    
-footer .logo {
-    float: none;
-}
-    
-#story img {
-    width: 75%;
-  }
-    
-#hero h1 {
-  text-align: left; /* Centers text on mobile*/
+#hero h1 { /*stlize h1 for medium*/
+  text-align: center; 
 }
 
-#hero h4 {
-   text-align: left;/* Centers text on mobile */
-}
-
-#hero {
-    padding-left: 30px; /* lines up header with projects */
+#hero h4 { /*stlize h4 for medium*/
+   text-align: center;
 }
     
+/*stylinging medium rows */
+    .row {
+margin: 50px 20px; 
+        
+} 
+
+/*removes tools column padding defined in mobile*/
+#padding-top {
+        padding-top: 10px;
+    }
+    
+
 header .logo { /* pushes logo in to line up with hero & projects below */
     margin-left: 20px;
 }
     
-#contact a  {  /*stylize email linke desktop size*/
+#contact a  {  /*stylize email link desktop size*/
    font-size: 20px;
-                          }
-
     }
+    
+/*makes top navigation appear in a row, rather than stacked as in mobile view */
+nav > ul > li { 
+  display: inline-block;
+}
+   
+/* makes sure navigation menu items appear on large screens */   
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+    
+ /* hides hamburger menu on large screens */   
+.navtoggle li:last-child {
+  display: none;
+}  
+  
+/* adds top and bottom margins to navigation menu */
+nav > ul {
+  margin: 1em 0;
+}
+    
+
+    
+footer .logo {
+  float: right;
+  max-width: 50px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  max-width: 50px;
+  height: 24px;
+  width:28px;
+}
+    
+.col-md-3 {
+    width: 33.3%;
+    float: left;
+    padding-bottom: 17px;
+    }    
+
+}
 
 
 /* ==============================
@@ -502,16 +657,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-    
-  .col-md-3 {
-    width: 33%;
-    float: left;
-    padding-bottom: 40px;
-  } 
-    
-  .col-lg-7 {
-    width: 60%;
-  }
+
 
   .col-lg-5 {
     width: 40%;
@@ -522,23 +668,16 @@ Large devices (1024px or larger)
     float: left;
     padding-bottom: 40px;
   }
+    
   .col-lg-8 {
     width: 40%;
     float: right;
   }
     
-
-#about-page .col-md-6 {
-     width: 50%;
-  }
-    
-  footer .logo {
-    float: right;
-}
-    
 #hero h1 {
     text-align: left;
     font-size: 60px;
+    padding-left: 28px;
 }
     
 #hero h4 {
@@ -546,7 +685,13 @@ Large devices (1024px or larger)
     color: #e9a7a1;
     font-weight: 500;
     letter-spacing: 2px;
+    padding-left: 28px;
       }
+    
+#hero
+    {
+margin-left: 30px;
+    }
     
 h3 {
     font-size: 30px;
@@ -556,19 +701,126 @@ h3 {
         font-size: 24px;
     }
     
-    
 #contact {
      font-size: 16px;
     }
     
-header .logo { /* pushes logo to right to line up vertically projects below */
+header .logo { /* pushes logo towards the right to line up vertically projects below */
     margin-left: 20px;
 }
-  
+    
+/*stylinging large rows */
+    .row {
+margin: 50px 20px; 
+        
+} 
+
+/*removes tools column padding defined in mobile*/
+#padding-top {
+        padding-top: 10px;
+    }
+    
+.col-lg-6 {
+    width:50%;
+    float:left;
+    padding-bottom: 40px;
+    }
+    
+body {
+        font-size: 18px;
+    }
+    
+#about-page .col-lg-5 { 
+    float: left;
+       }
+       
+#about-page .col-lg-7 {
+    float: right;
+       }
+    
+ #story img { /*stlize headshot*/
+    display: block;
+    width: 75%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }   
+    
+
+.col-lg-3 {
+    width: 33.3%;
+    float: left;
+    padding-bottom: 0px;
+    }   
+    
+footer .logo {
+  float: right;
+  max-width: 50px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  max-width: 50px;
+  height:24px;
+  width: 28px;
+}
+
+#padding-left { /*footer columns */
+    padding-left: 50px;
+    margin-top: -40px;
+
+} 
+                      
+#margin-top { /*footer columns */
+    margin-top: -40px;
+ }
+    
+/*moves skills column to the right */
+ #skills-padding {
+    padding-left: 20px;
+      }
+
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
+
+/*removes tools column padding defined in mobile*/
+#padding-top {
+        padding-top: 10px;
+    }
+    
+.col-xl-6 {
+    width:50%;
+    float:left;
+    padding-bottom: 40px;
+    }
+
+
+body {
+   font-size: 18px;
+    }
+
+/*removes tools column padding defined in mobile*/
+#padding-top {
+        padding-top: 10px;
+    }
+    
+
+.col-lg-3 {
+    width: 33.3%;
+    float: left;
+    padding-bottom: 0px;
+    }
+    
+#padding-left { /*footer columns */
+    padding-left: 50px;
+    margin-top: -40px;
+
+} 
+                      
+#margin-top { /*footer columns */
+    margin-top: -40px;
+ }
+    
 }
