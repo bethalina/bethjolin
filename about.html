@@ -11,25 +11,33 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
      <!--link to normalize css stylesheet-->
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!--link to internal css stylesheet-->
-    <link rel="stylesheet" href="https://use.typekit.net/oio6qje.css"><!--link to adobe fonts-->      
+    <link rel="stylesheet" href="https://use.typekit.net/oio6qje.css"><!--link to adobe fonts--> 
+      <!--link to fontawesome icons-->
+      <script src="https://kit.fontawesome.com/504d913882.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/804e8b6310.js" crossorigin="anonymous"></script>
+
+
     <title>About Beth Jolin, Web &amp; graphic designer, UI/UX Designer</title>
   </head>
   <body id="about-page">
-    <!-- For the header -->
-	<header>
+       <!-- For the header -->
+<header>
 		<!-- For the navigation -->
 		<div class="container">
+            <div class="navtoggle" id="myNavtoggle"> <!--allows me to toggle menu on and off-->
             <a href="index.html">
 			 <img src="img/svg/jB.svg" class="logo" alt="Logo" >
             </a>
             <nav>
               <ul class="navigation">
-                <li><a href="index.html">Work</a></li>
-                <li class="active"><a href="about.html">About</a></li>
+                <li> <a href="index.html">Work</a></li>
+                <li class="active"><a href="about.html">About</a></li>                
                 <li><a href="#contact">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
               </ul>
             </nav>
-		</div>
+            </div><!--hamburger menu toggle -->
+		</div><!--container-->
 	</header>
 
     <main>
@@ -46,15 +54,13 @@
 <div id="story"><!--For the image, My Story and Skills and tools sections-->   
      <div class="container">
          <!--about me -->
-         <div class="row" style="margin-bottom: 20px;"> <!--row for -->
-             <div class="column col-md-6 col-lg-6" style="padding: 10px; margin-bottom: 20px;"> <!--holds picture-->
-   
-                 
+         <div class="row"> <!--row for -->
+             <div class="column col-lg-5"> <!--holds picture-->
                   <picture class="potrait"> <source srcset="img/beth.jpg" media="(max-width:767px)">
                   <img src="img/beth.jpg" alt="Headshot"></picture>   
                   </div>
              
-             <div class="column col-md-6 col-lg-6" style="padding-top: 20px; padding-left: 10px; padding-right: "><!--holds story-->
+             <div class="column col-lg-7"><!--holds story-->
                   <p>My work combines a strong graphic design background, oodles of research and an uncanny intuitive ability to narrate my clients ideas successfully whatever the medium.</p>
 
                    <p>I believe that great design solutions are the result of good communication and collaboration between a team of individuals. Designer, client, and users must all take a seat at the table to ensure a valuable product. I find inspiration in my everyday things from a vintage fruit box, to the zig zag pattern found on the back of a Red Bellied Woodpecker.</p>
@@ -62,32 +68,11 @@
                    <p>When not immersed in a design project you will find me stalking wildlife, particularly those that are feathered. Nature and meditation are how I create balance in my life, and where I find inspiration. I am especially passionate and curious about our own innate ability to heal ourselves. I am an avid walker, runner, bicyclist, and swimmer. I also enjoy cooking locally sourced vegan &amp; vegetarian meals for family and friends.</p>
                     <a href=files/bethJolinResume.pdf class="button" target="_blank">Resume</a>
                </div> 
-  
-            </div>
-                 <div class="row"><!--row two-->
-                     <div class="col-md-6" style="padding-left: 30px;"><!--Column two, row one-->
-                            <h3>Skills</h3>
-<!--this styling does not work when i put this in css? /: -->
-<style> 
-.skill-button {
-    
-  border: none;
-  color: #282A36;
-  padding: 7px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 8px 4px;
-  border-radius: 30px;
+               </div> <!--end of row 1 --> 
 
-}
-.row-button {
-  margin: 3px 0; /* 25px top and bottom, 0 left and right */
-}
-                             
-</style>
+                 <div class="row" id="skills-padding"><!--row two-->
+                     <div class="col-md-6"><!--Column two, row one-->
+                        <h3>Skills</h3>
                          <div class="row-button">
                              <button class="skill-button">UI/UX</button>
                             <button class="skill-button">Illustration</button>
@@ -116,8 +101,8 @@
                             </div>
 
                             </div>
-                            <div class="col-md-6"><!--Column two, row two-->
-                                <h3>Tools</h3>
+                            <div class="col-md-6" id="padding-top"><!--Column two, row two-->
+            <h3>Tools</h3>
                             <div class="row-button">
                              <button class="skill-button">Figma</button>
                             <button class="skill-button">Adobe Indesign</button>
@@ -136,59 +121,43 @@
                              <button class="skill-button">Plone</button>
                             <button class="skill-button">Brackets</button>
                             <button class="skill-button">Github</button>
+                          </div> 
 
-                          </div>
+                            </div> <!--end of tools sections-->
+                        </div> <!--end of skills & tools row-->
 
-                            </div>
-                        </div> <!--end of row 2-->
-                    </div> <!--end of container-->
-                </div><!--end of about me section-->
+                </div><!--end of container-->
+        </div><!--end of about me section-->
 
     </main>
 
 
+	<!-- For the footer  -->
 	<footer id="contact" style="clear: both;">
 		<div class="container">
             <div class="row" style="border-bottom: 1px solid #ffffff; margin-bottom: 20px;">
-                <div class="col-md-3">
+                <div class="col-md-3 col-lg-3 col-xl-3">
                 <h3>Beth Jolin Design</h3>
                 </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-lg-3 col-xl-3"></div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
                 <img src="img/svg/jB_white.svg" class="logo" alt="Logo" >
                 </div>
             </div>
             
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-lg-3" id="margin-top">
                     <p>Central Wisconsin based graphic &amp; web designer, UI/UX designer, illustrator, and nature lover.</p>
                     <p>&copy;2023 Beth Jolin Design. <span>All rights reserved.</span></p>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-lg-3" id="padding-left">
                     <p><span>Have a project in mind that you need help with? Shoot me a message at my email address. </span></p>
 
                 <p><a href="mailto:hello@bethjolin@gmail.com">hello@bethjolin@gmail.com</a></p>
                 </div>
-                <div class="col-md-3" style="float: right;">
+                <div class="col-lg-3" id="margin-top" style="float: right;">
                     <ul class="social" style="float: right;" >
-                    <!--Social Media Layout and Placeholders-->
-<!--styling does not work when I insert it into the CSS styelsheet, it looks like the solution maybe js-->
-<style>    
-#linkedin:hover {
-    content: url(img/svg/grey_inkedin.svg);
-}
-#behance:hover {
-    content: url(img/svg/grey_behance.svg);
-}
-#instagram:hover {
-    content: url(img/svg/grey_instagram.svg);
-}
-#github:hover {
-    content: url(img/svg/grey_github.svg);
-}
-
- </style>
                         <li >
                             <a href="https://www.linkedin.com/in/beth-jolin-014214156/" target="_blank">
                                 <img id="linkedin" src="img/svg/white_linkedin.svg" alt="LinkedIn">
@@ -196,7 +165,7 @@
                         </li>
                         <li>
                             <a href="https://www.behance.net/twiinbethjeb30" target="_blank">
-                                <img id="behance"src="img/svg/white_behance.svg" alt="Behance">
+                                <img id="behance" src="img/svg/white_behance.svg" alt="Behance">
                             </a>
                         </li>
                         <li>
@@ -215,8 +184,13 @@
             </div>
 
         </div>
-              
 
 	</footer>
+            <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+
   </body>
 </html>
