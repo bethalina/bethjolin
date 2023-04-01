@@ -1220,5 +1220,124 @@ X-large devices (1440px or larger)
             /*footer columns */
             margin-top: -40px;
         }
+        
+/*===========================================styling "extra-large project" pages =============================================*/
+
+/* fixing the mystery margin on h5's in project area */
+#project h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*styling for large rows*/
+#project .margin {
+    margin: 15px 40px;
+    padding-left:60px;
+    padding-right:60px;
+
+    
+}
+/*styling for my row column*/
+.padding-role {
+      margin-top:10px;
+        }    
+        
+        
+/*styling for large columns*/
+#project .padding-left {
+    padding-left:60px;
+    padding-top:40px;
+    padding-right:10px;
+    padding-bottom:30px;
+    }
+        
+#project .padding-right {
+    padding-left:0px;
+    padding-top:40px;
+    padding-right:50px;
+
+    }
+
+#project .padding-role {
+      padding-top: 28px;
+     padding-left: 60px;
+    padding-bottom: 30px;
+                    }
+        
+        
+.ns-problem img {
+    display: block;
+    margin-left: 30px;
+    margin-right:60px;
+    width: 85%;
+    margin-top:10px;
+    float:right;
+
+}
+
+.ns-solution img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 70%;
+    margin-top:50px;
+}
+        
+/*styling for large competitive analysis*/
+.ns-analysis img {
+    display: block;
+    margin-left: 0px;
+    margin-right:0px;
+    width: 80%;
+    margin-top:60px;
+     }    
+
+#project .analysis-left {
+    padding-left:60px;
+    padding-top:40px;
+    padding-right:10px;
+    margin-right:-70px;
+    padding-bottom:30px;
+    }
+
+#project .analysis-right{
+    padding-left:-180px;
+    padding-top:60px;
+    padding-right:60px;
+    }  
+        
+/*styling "on-boarding" section */
+.project-hdr-01{
+    padding:10px 60px 0px 60px;
+    margin-top:20px;
+    margin-bottom:0px;
+    }
+        
+.sub-header {
+       margin-top:-20px;
+        }
+        
+   .ns-signOn img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-top:-30px;
+    padding-top: 10px;
+     padding-left:25px;
+     padding-right:-100px;
+}
+
+.ns-animal-helper img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-top:10px;
+padding-top: 0px;
+     padding-left:-25px;
+     padding-right:20px;
+}
+    
 
     }
