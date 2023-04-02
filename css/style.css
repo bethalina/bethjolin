@@ -586,25 +586,18 @@ footer .logo {
 /*styling for project pages MY ROLE lists */
 
 ul.no-bullets {
-
     list-style-type: none;
-
     margin: 0;
-
     padding: 0;
-
     line-height:
-
 }
 
 #project .margin {
-
     margin: 20px 20px;
     padding-bottom: 20px;
     padding-top:20px;
     padding-left:10px;
     padding-right: 10px;
-
 }
 
     .ns-wireframe img {
@@ -628,6 +621,12 @@ ul.no-bullets {
         filter: drop-shadow(5px 5px 5px #999999);
 
     }
+
+/* styling headers not in columns */        
+.project-hdr-01 {
+     padding-left: 10px;
+    padding-top:20px;                
+}
 
 /*====================== end of styling mobile project pages =================================================================*/
 
@@ -827,6 +826,7 @@ Medium devices (640px and larger)
         max-width: 50px;
         height: 24px;
         width: 28px;
+        margin-right:-220px;
     }
 
     .col-md-3 {
@@ -838,16 +838,12 @@ Medium devices (640px and larger)
     /*========================== styling 'medium-project' pages =================================================================*/
 
     /*styling for medium rows*/
-
- 
-
 #project .margin {
     margin: 20px 20px;
     padding-bottom: 20px;
     padding-top:10px;
     padding-left:10px;
     padding-right: 10px;
-
 }
 
 /*styling for medium columns*/
@@ -886,7 +882,6 @@ Medium devices (640px and larger)
     margin-right:auto;
     width: 95%;
     margin-top:-100px;
-
 }
     
    .ns-signOn img {
@@ -927,6 +922,25 @@ Medium devices (640px and larger)
      padding-left: 30px;
     padding-top:20px; 
     padding-right:30px;
+}
+    
+/* styling medium moon magic images */        
+.ns-moon-welcome {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+    padding-left:10px;
+    padding-right: 10px
+}
+
+.ns-moon-guide {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding-left:10px;
+    padding-right: 10px
 }
     
     }
@@ -1036,7 +1050,7 @@ Large devices (1024px or larger)
 
 /*styling footer columns */
         .col-lg-3 {
-            width: 33.3%;
+            width: 25%;
             float: left;
             padding-bottom: 0px;
         }
@@ -1049,6 +1063,7 @@ Large devices (1024px or larger)
             max-width: 50px;
             height: 24px;
             width: 28px;
+            margin-right:-280px;
         }
 
         #padding-left {
@@ -1153,17 +1168,19 @@ Large devices (1024px or larger)
     }
         
 .sub-header {
-       margin-top:-20px;
+   margin-top:-20px;
+    margin-bottom: 0px;
         }
         
+/*styling x-large on-boarding images */
    .ns-signOn img {
     display: block;
     margin-left: auto;
     margin-right:auto;
     width: 100%;
-    margin-top:-30px;
+    margin-top:-50px;
     padding-top: 10px;
-     padding-left:25px;
+     padding-left:0px;
      padding-right:-100px;
 }
 
@@ -1171,13 +1188,34 @@ Large devices (1024px or larger)
     display: block;
     margin-left: auto;
     margin-right:auto;
-    width: 100%;
-    margin-top:10px;
-padding-top: 0px;
-     padding-left:-25px;
-     padding-right:20px;
+    width:98%;
+    padding-left:-25px;
+    padding-right:0px;
 }
     
+/* styling arge moon magic images */        
+.ns-moon-welcome img{
+    display: block;
+    margin-left:-20px;
+    margin-right:auto;
+    width:110%;
+}
+
+.ns-moon-guide img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding-left:10px;
+    padding-right: 0px;
+    padding-bottom:-20px;
+}
+        
+
+.col-lg-4 {
+    width:25%;
+    float:left;
+        }   
   
     }
 
@@ -1317,6 +1355,7 @@ X-large devices (1440px or larger)
        margin-top:-20px;
         }
         
+/*styling x-large on-boarding images */
    .ns-signOn img {
     display: block;
     margin-left: auto;
@@ -1339,5 +1378,23 @@ padding-top: 0px;
      padding-right:20px;
 }
     
+/* styling x-large moon magic images */        
+.ns-moon-welcome {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+    padding-left:10px;
+    padding-right: 10px
+}
+
+.ns-moon-guide {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding-left:10px;
+    padding-right: 10px
+}
 
     }
