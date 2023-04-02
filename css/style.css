@@ -641,8 +641,20 @@ ul.no-bullets {
     margin-left:auto;
     margin-right:auto;
     width:100%;
-
 }  
+
+/* styling mobile MOON image */        
+
+.ns-moons img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.moon-exercise {
+    padding: 0px 0px 20px 0px;
+}
 
 /*====================== end of styling mobile project pages =================================================================*/
 
@@ -960,6 +972,19 @@ Medium devices (640px and larger)
     padding-right: 10px
 }
     
+/* styling medium MOON image */        
+.ns-moons img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.moon-exercise {
+    padding: 0px 20px 20px 20px;
+}
+
+    
     }
     
 /*============================== end of styling "medium-project-pages"============================================*/
@@ -1262,7 +1287,21 @@ Large devices (1024px or larger)
     width:98%;
     margin-top: -30px;
 }  
-.col-lg-4 {
+        
+/* styling medium MOON image */        
+.ns-moons img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.moon-exercise {
+    padding: 0px 40px 40px 40px;
+} 
+        
+/*=========column mistake ========================*/
+   .col-lg-4 {
     width:25%;
     float:left;
         }   
