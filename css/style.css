@@ -628,6 +628,22 @@ ul.no-bullets {
     padding-top:20px;                
 }
 
+/* styling mobile OCEAN SPACE images */        
+.ns-ocean-01 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:105%;
+}
+
+.ns-ocean-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+
+}  
+
 /*====================== end of styling mobile project pages =================================================================*/
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -828,6 +844,7 @@ Medium devices (640px and larger)
         width: 28px;
         margin-right:-220px;
     }
+    
 
     .col-md-3 {
         width: 33.3%;
@@ -1193,7 +1210,7 @@ Large devices (1024px or larger)
     padding-right:0px;
 }
     
-/* styling arge moon magic images */        
+/* styling large moon magic images */        
 .ns-moon-welcome img{
     display: block;
     margin-left:-20px;
@@ -1211,7 +1228,40 @@ Large devices (1024px or larger)
     padding-bottom:-20px;
 }
         
+/* styling large LISTEN images */        
+.ns-listen-01 img{
+    display: block;
+    margin-left:-10px;
+    margin-right:auto;
+    padding-top: 30px;
+    width:103%;
+}
 
+.ns-listen-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding-bottom:-20px;
+    margin-top: -20px;
+}
+        
+/* styling LARGE OCEAN SPACE images */        
+.ns-ocean-01 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 20px;
+    width:105%;
+}
+
+.ns-ocean-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:5px;
+    width:98%;
+    margin-top: -30px;
+}  
 .col-lg-4 {
     width:25%;
     float:left;
@@ -1396,5 +1446,42 @@ padding-top: 0px;
     padding-left:10px;
     padding-right: 10px
 }
+        
+        
+/* styling x-large LISTEN images */        
+.ns-listen-01 img{
+    display: block;
+    margin-left:-10px;
+    margin-right:auto;
+    padding-top: 50px;
+    width:100%;
+}
+
+.ns-listen-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:103%;
+    padding-bottom: 0px;
+    margin-top: -20px;
+}
+        
+/* styling x-large OCEAN SPACE images */        
+.ns-ocean-01 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 30px;
+    width:105%;
+}
+
+.ns-ocean-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:5px;
+    width:98%;
+    padding-bottom: 0px;
+    margin-top: -20px;
+} 
 
     }
