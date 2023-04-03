@@ -535,6 +535,16 @@ main {
 
 }
 
+.big-pics {
+    /* centering and making cover image fit full width of screen */
+    width: 100%;
+   display:block;
+    padding-left: 10px;
+padding-right: 10px;
+}
+
+
+
 #project span {
     /*stylizes bold project h2 font color: blue #5fb3bd*/
     color: #d75c5c;
@@ -1000,6 +1010,13 @@ Medium devices (640px and larger)
     width:100%;
 }  
 
+.big-pics {
+    /* centering and making cover image fit full width of screen */
+    width: 100%;
+   display:block;
+    padding-right:20px;
+    padding-left: 20px;
+}
 
     }
     
@@ -1347,7 +1364,7 @@ Large devices (1024px or larger)
     width:25%;
     float:left;
         }   
-  
+
     }
 
     /* ==============================
@@ -1579,5 +1596,13 @@ padding-top: 0px;
     margin-right:auto;
     width:95%;
 } 
+        
+.big-pics {
+    /* centering and making cover image fit full width of screen */
+    width: 100%;
+   display:block;
+    padding-right:40px;
+    padding-left: 40px;
+}    
 
     }
