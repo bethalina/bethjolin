@@ -656,6 +656,31 @@ ul.no-bullets {
     padding: 0px 0px 20px 0px;
 }
 
+.ns-myStuff-01
+ {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:103%;
+}  
+
+.ns-myStuff-02{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+/*styling my stuff second page*/
+.ns-myStuff-lg{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.my-stuff-image {
+    padding: 0px 0px 20px 0px;
+}
 /*====================== end of styling mobile project pages =================================================================*/
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -983,8 +1008,17 @@ Medium devices (640px and larger)
 .moon-exercise {
     padding: 0px 20px 20px 20px;
 }
-
     
+
+    /*styling my stuff large image*/
+.ns-myStuff-lg{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+
     }
     
 /*============================== end of styling "medium-project-pages"============================================*/
@@ -1300,6 +1334,32 @@ Large devices (1024px or larger)
     padding: 0px 40px 40px 40px;
 } 
         
+.ns-myStuff-01
+ {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:105%;
+}  
+
+.ns-myStuff-02{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+} 
+        
+/*styling my stuff large image*/
+.ns-myStuff-lg{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-bottom: -20px;
+    width:100%;
+}  
+        
 /*=========column mistake ========================*/
    .col-lg-4 {
     width:25%;
@@ -1521,6 +1581,21 @@ padding-top: 0px;
     width:98%;
     padding-bottom: 0px;
     margin-top: -20px;
+} 
+        
+.ns-myStuff-01
+ {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.ns-myStuff-02{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
 } 
 
     }
