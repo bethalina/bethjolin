@@ -514,11 +514,12 @@ main {
     padding-top: 40px;
 }
 
-footer .logo {
+#contact .logo {
     float: none;
     max-width: 50px;
-    margin-top: -75px;
-    margin-bottom: 15px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    
 }
 
 /*--------------------------------------------Start Section--------------------------------------------*/
@@ -528,53 +529,39 @@ footer .logo {
 
 
 #cover-image {
-
     /* centering and making cover image fit full width of screen */
-
     width: 100%;
-
     justify-content: center;
 
 }
 
 #project span {
-
     /*stylizes bold project h2 font color: blue #5fb3bd*/
-
     color: #d75c5c;
-
     font-weight: 700;
-
 }
 
 #project h5 {
-
     /* fixing the mystery margin on h5's in project area */
-
     margin-top: 15px;
-
     margin-bottom: 10px;
-
 }
 
 
 
 .ns-problem img {
     /*mobile 'problem' image */
-
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     padding-top: 0px;
-
 }
 
 
 
 .ns-solution img {
     /* mobile 'the solution' image */
-
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -584,7 +571,6 @@ footer .logo {
 }
 
 /*styling for project pages MY ROLE lists */
-
 ul.no-bullets {
     list-style-type: none;
     margin: 0;
@@ -606,25 +592,22 @@ ul.no-bullets {
         margin-right: auto;
         width: 80%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-
     }
 
 /* styling headers not in columns */        
 .project-hdr-01 {
-     padding-left: 10px;
+    padding-left: 10px;
     padding-top:20px;                
 }
-
 
 .shadow img {
         -webkit-filter: drop-shadow(5px 5px 5px #999999);
         filter: drop-shadow(5px 5px 5px #999999);
-
     }
 
 /* styling headers not in columns */        
 .project-hdr-01 {
-     padding-left: 10px;
+    padding-left: 10px;
     padding-top:20px;                
 }
 
@@ -644,7 +627,6 @@ ul.no-bullets {
 }  
 
 /* styling mobile MOON image */        
-
 .ns-moons img {
     display: block;
     margin-left:auto;
@@ -871,7 +853,7 @@ Medium devices (640px and larger)
 
 
 
-    footer .logo {
+    #contact .logo {
         float: right;
         max-width: 50px;
         margin-top: 10px;
@@ -879,7 +861,7 @@ Medium devices (640px and larger)
         max-width: 50px;
         height: 24px;
         width: 28px;
-        margin-right:-220px;
+        margin-right:0px;
     }
     
 
@@ -1126,12 +1108,12 @@ Large devices (1024px or larger)
 
 /*styling footer columns */
         .col-lg-3 {
-            width: 25%;
+            width: 33.3%;
             float: left;
             padding-bottom: 0px;
         }
 
-        footer .logo {
+        #contact .logo {
             float: right;
             max-width: 50px;
             margin-top: 8px;
@@ -1139,7 +1121,7 @@ Large devices (1024px or larger)
             max-width: 50px;
             height: 24px;
             width: 28px;
-            margin-right:-280px;
+            margin-right:-0px;
         }
 
         #padding-left {
@@ -1398,7 +1380,7 @@ X-large devices (1440px or larger)
 
         #padding-left {
             /*footer columns */
-            padding-left: 50px;
+            padding-left: 80px;
             margin-top: -40px;
 
         }
