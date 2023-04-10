@@ -1,392 +1,173 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
-
-<!-- PAGE HEAD Note:primarily holds information for machine processing,not human-readability-->
-<head>
-    <!--THIS CODE FIXES THE SHRINKAGE ISSUES-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--LINK TO EXTERNAL CSS STYLESHEET-->
-        <link rel="stylesheet" type="text/css"          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-   
-    <!--LINK TO INTERNAL CSS STYLESHEET-->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+<html lang="en" dir="ltr">  
     
-    <!--LINKS TO Adobe FONTS-->
-    <link rel="stylesheet" href="https://use.typekit.net/oio6qje.css">
-
     
-    <meta charset="utf-8">
+  <head><!-- Note:primarily holds information for machine processing,not human-readability-->
+    <meta charset="utf-8"><!--this code fixed shrinkage issues-->
     <meta name="author" content="Beth Jolin">
+    <meta name="description" content="This is the about page of my website.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/svg/jB.svg" rel="shortcut icon"><!--link to jb logo-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+     <!--link to normalize css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--link to internal css stylesheet-->
+    <link rel="stylesheet" href="https://use.typekit.net/oio6qje.css"><!--link to adobe fonts--> 
+      <!--link to fontawesome icons-->
+      <script src="https://kit.fontawesome.com/504d913882.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/804e8b6310.js" crossorigin="anonymous"></script>
+
+    <title>6.5 x 55 llc</title>
+  </head>
     
-    <meta name="description" content="This is the home page of my website">
-    <title>Beth Jolin UI/UX Designer/Graphic Designer</title>
-    
-</head>
-<!--END OF HEAD-->
-  <body id="index_page">
-    <!-- For the header -->
-	<header>
+  <body id="mauser">
+  <!-- for the header -->
+		<header>
 		<!-- For the navigation -->
 		<div class="container">
-            
-           <div id ="logo"> <!--logo container-->
-                <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.84 2.376C11.84 1.096 10.784 0.039999 9.504 0.039999C8.224 0.039999 7.168 1.096 7.168 2.376C7.168 3.656 8.224 4.712 9.504 4.712C10.784 4.712 11.84 3.656 11.84 2.376ZM11.52 9.384H9.952C9.376 9.832 8.512 10.408 7.552 10.92C6.752 11.336 5.888 11.752 5.12 12.04V13.448L6.08 13.576C6.56 13.64 7.456 13.992 7.456 15.88V26.664C7.456 28.648 7.072 29.096 6.272 29.096C4.896 29.096 4.832 26.696 2.848 26.696C1.888 26.696 0.992 27.304 0.992 28.456C0.992 30.056 2.88 31.208 5.632 31.208C8.896 31.208 11.52 29.768 11.52 23.496V9.384ZM37.331 17.832C37.331 14.76 35.475 12.936 32.467 11.688V11.592C34.163 10.856 36.659 9.224 36.659 5.96C36.659 2.696 34.195 0.039999 28.787 0.039999H15.315V1.544C16.755 1.736 18.451 2.312 18.451 4.808V20.584C18.451 22.632 16.467 23.24 15.155 23.464V25H29.971C35.027 25 37.331 21.32 37.331 17.832ZM32.211 5.96C32.211 8.584 30.227 10.6 28.211 10.6H22.771V4.36C22.771 2.856 23.443 1.992 26.387 1.992C30.259 1.992 32.211 3.304 32.211 5.96ZM32.755 17.768C32.755 21.32 30.227 23.016 26.579 23.016C23.347 23.016 22.771 22.248 22.771 20.808V12.616H27.891C30.803 12.616 32.755 14.888 32.755 17.768Z" fill="#282A36"/>
-</svg> <!-- LOGO SVG -->
-               
-            </div><!--logo container--> 
+            <div class="navtoggle" id="myNavtoggle"> <!--allows me to toggle menu on and off-->
+            <a href="index.html">
+			 <img src="img/svg/jB.svg" class="logo" alt="Logo" >
+            </a>
             <nav>
               <ul class="navigation">
-                <li class="active"><a href="index.html">Work</a></li>
+                <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
               </ul>
             </nav>
-		</div>
+            </div><!--hamburger menu toggle -->
+		</div><!--container-->
 	</header>
 
 
-<main><!-- Main content of site -->
-
-<!-- HERO SECTION -->
-<div>
-   <div>
-    
-    
-    <span>
-       </span>
-    <p> A responsive e-commerce site &amp; branding.
-       <h2>6.5 X 55
-       </h2>
+<main>
+      <!-- For the hero section -->
+   <div id="hero">
+   <div class="container">
+    <h4>A Responsive E-Commerce Website &amp; Logo Design.</h4>
+     <h1>6.5 X 55 llc</h1>
     </div> 
+    </div> <!--hero -->
     
-    </div> <!-- HERO SECTION -->
-    
-<!-- IMAGE 1 -->
-
-<div> <!-- MAUSER IMAGE ROW-->
-     <div> <!-- IMAGE 1 CONTAINER -->
+<!-- for the cover -->
+<div id="cover-image"> 
             <picture> <source srcset="img/65x55/mauser-web-mockup-1@2.jpg" media="(max-width:767px)">
-            <img src="img/65x55/mauser-web-mockup-1@2.jpg" alt="6.5 x 55 Mockup">
-            </picture>  
-    </div> <!-- IMAGE 1 CONTAINER -->
-    
-</div>  <!--ROW 1 IMAGE-->
-             
-             
-  
-<div> <!-- ROW 2 CONTAINING DESCRIPTION -->
-    <div><!--CONTAINER 2-->
-        <div><!--LEFT COLUMN-->
-            <P><strong>The Project:</strong></P> <!--project title-->
-                    
+            <img src="img/65x55/mauser-web-mockup-1@1.jpg" alt="66 x 55 logo on antique swedish mauser rifle">
+            </picture>          
+ 
+</div><!--cover--> 
+
+
+<div id="project">
+      <div class="container">
+
+<div class="row margins" style="background-color: #f6f5f3"> <!-- about the project -->
+    <div class="col-lg-7 column-padding"><!--the project-->
+            <h5>The Project:</h5>
             <p><!--project description-->
                 A native app that provides tools for children to help understand and manage their emotions while gently introducing them to the wonders of nature. My goal for this UI/UX study was to create a platform where children would feel safe, comfortable and enthusiastic to learn, play and grow.</p>
-                    
-        </div> <!--LEFT COLUMN-->
-    </div> <!--CONTAINER 2-->
-
+        </div> <!--left column-->
     
-    <div> <!--RIGHT COLUMN-->
-        <P><strong>The Project:</strong></P> <!--MY ROLE-->
-                <ul>
+    <div class="col-lg-5 column-padding"> <!--right column-->
+  
+        <h5>My Role:</h5> <!--my role-->
+
+        <ul class="no-bullets">
                     <li>UI/UX Design</li>
                     <li>Illustration</li>
                     <li>Branding</li>
                     <li>Native App Design</li>
                 </ul>
-             
-    
-        </div> <!--RIGHT COLUMN-->
-</div> <!-- ROW 2 CONTAINING DESCRIPTION -->
-    
-<div> <!-- ROW 3 IMAGE-->
-     <div> <!-- ROW 3 CONTAINER -->
-        <picture> <source srcset="img/65x55/mauser-web-mockup-2@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-2@1.jpg" alt="6.5 x 55 Mockup">
-   </picture>  
-                        
-</div> <!-- ROW 3 CONTAINER-->
-    
-</div>  <!--ROW 3 IMAGE-->
-    
-<div> <!-- ROW 4-->
-    <div> <!-- ROW 4 CONTAINER -->
-                      
-    <picture> <source srcset="img/65x55/mauser-web-mockup-3@2.jpg" media="(max-width:767px)">
-    <img src="img/65x55/mauser-web-mockup-3@2.jpg" alt="6.5 x 55 Mockup">
-   </picture>  
+        </div> <!--right column-->
+              </div><!--about the project row-->
+          
+<div class="row" id="row-projects" style="background-color: #f6f5f3"> <!-- the problem -->
+    <div class="col-lg-6 column-padding"><!--text-->
+            <h3>The Problem</h3>
+            <p>
+          The majority of the emotional well-being apps are built for adults, have long, laborious sign-on processes, and most require a subscription to access premium features. One has to be very careful when signing up for these apps to not unintentionally subscribe as most require payment information with a free trial period.</p>
+        <p>Most well-being apps do not offer a rapid solution, nor insight into a feeling. The apps I analyzed focused on long-term goals and solutions. It was frustrating not to easily "Check-In” with a current emotion. It seemed a valuable missing asset for not only children but adults too
+        </p>
+        <p>I found very few that catered to children. Locating a single list of emotions or pictures to help illustrate those emotions proved difficult. </p>
+        
+        </div> <!--left column-->
+ 
+    <div class="col-lg-6 column-padding" style="padding-top:0px"> <!--right column-->
+ <picture class="ns-problem"> <source srcset="img/natureSpace/nature-space-1@2.png" media="(max-width:300px)">
+            <img src="img/natureSpace/nature-space-1@1.png" alt="meditation instruction screens for a health & wellness app">
+            </picture>       
+       
+        </div> <!--right column-->
+              </div><!--about the project row--> 
 
-                        
-    </div> <!-- ROW 4  CONTAINER-->
-</div><!--ROW 4 IMAGE-->
-    
-<div> <!-- ROW 5-->
-    <div> <!-- ROW 5 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-4@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-4@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 5  CONTAINER-->
-</div><!--ROW 5 IMAGE-->
-    
-<div> <!-- ROW 6-->
-    <div> <!-- ROW 6 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-5@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-5@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 6  CONTAINER-->
-</div><!--ROW 6 IMAGE 5-->
-
-<div> <!-- ROW 7-->
-    <div> <!-- ROW 7 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-6@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-6@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 7  CONTAINER-->
-</div><!--ROW 7 IMAGE 6-->
-    
-<div> <!-- ROW 8, IMAGE 7-->
-    <div> <!-- ROW 8 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-7@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-7@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 8  CONTAINER-->
-</div><!--ROW 8 IMAGE 7-->
-    
-<div> <!-- ROW 9, IMAGE 8-->
-    <div> <!-- ROW 9 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-8@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-8@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 9 CONTAINER-->
-</div><!--ROW 9 IMAGE 8-->
-
-<div> <!-- ROW 10, IMAGE 9-->
-    <div> <!-- ROW 10 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-9@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-9@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 10 CONTAINER-->
-</div><!--ROW 10 IMAGE 9-->
-    
-<div> <!-- ROW 11, IMAGE 10-->
-    <div> <!-- ROW 11 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-10@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-10@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 11 CONTAINER-->
-</div><!--ROW 11 IMAGE 10-->
-    
-<div> <!-- ROW 12, IMAGE 11-->
-    <div> <!-- ROW 12 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-11@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-11@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 12 CONTAINER-->
-</div><!--ROW 12 IMAGE 11-->
-    
-<div> <!-- ROW 13, IMAGE 12-->
-    <div> <!-- ROW 13 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-12@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-12@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 13 CONTAINER-->
-</div><!--ROW 13 IMAGE 12-->
-    
-<div> <!-- ROW 14, IMAGE 13-->
-    <div> <!-- ROW 14 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-13@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-13@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 14 CONTAINER-->
-</div><!--ROW 14 IMAGE 13-->
-    
-<div> <!-- ROW 15, IMAGE 14-->
-    <div> <!-- ROW 15 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-14@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-14@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 15 CONTAINER-->
-</div><!--ROW 15 IMAGE 13-->
-    
-<div> <!-- ROW 16, IMAGE 15-->
-    <div> <!-- ROW 16 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-15@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-15@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 16 CONTAINER-->
-</div><!--ROW 16 IMAGE 15-->
-    
-<div> <!-- ROW 17, IMAGE 16-->
-    <div> <!-- ROW 17 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-16@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-16@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 17 CONTAINER-->
-</div><!--ROW 17 IMAGE 16-->
-    
-<div> <!-- ROW 18, IMAGE 17-->
-    <div> <!-- ROW 18 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-17@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-17@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 18 CONTAINER-->
-</div><!--ROW 18 IMAGE 17-->
-    
-<div> <!-- ROW 19, IMAGE 18-->
-    <div> <!-- ROW 19 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-18@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-18@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 19 CONTAINER-->
-</div><!--ROW 19 IMAGE 18-->
-    
- <div> <!-- ROW 20, IMAGE 19-->
-    <div> <!-- ROW 20 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-19@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-19@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 20 CONTAINER-->
-</div><!--ROW 20 IMAGE 19-->
-    
-<div> <!-- ROW 21, IMAGE 20-->
-    <div> <!-- ROW 21 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-20@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-20@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 21 CONTAINER-->
-</div><!--ROW 21 IMAGE 20-->
-    
-<div> <!-- ROW 22, IMAGE 20-->
-    <div> <!-- ROW 22 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-21@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-21@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 22 CONTAINER-->
-</div><!--ROW 22 IMAGE 21-->
-    
-<div> <!-- ROW 23, IMAGE 20-->
-    <div> <!-- ROW 22 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-22@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-22@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 23 CONTAINER-->
-</div><!--ROW 23 IMAGE 22-->
-    
-<div> <!-- ROW 24, IMAGE 23-->
-    <div> <!-- ROW 24 CONTAINER -->
-                      
-        <picture> <source srcset="img/65x55/mauser-web-mockup-23@2.jpg" media="(max-width:767px)">
-        <img src="img/65x55/mauser-web-mockup-23@1.jpg" alt="6.5 x 55 Mockup">
-        </picture>  
-
-                        
-    </div> <!-- ROW 24 CONTAINER-->
-</div><!--ROW 24 IMAGE 23-->
-    
-
-    
+        
+        </div><!--container end -->
+    </div> <!-- end of project id -->
 </main>
     
 
 <!-- For the footer  -->
-	<footer id="contact" class="main-footer">
+	<footer id="contact" style="clear: both;">
 		<div class="container">
-            <h2>Beth Jolin Design</h2>
-            <p>Central Wisconsin based graphic &amp; web designer, UI/UX designer, illustrator, and nature lover.</p> 
-            <p>Call: <a href="tel:+9206599357">(920) 659-9357</a>
-            <div>
-             <a href="mailto:hello@bethjolin@gmail.com" class="button contact">hello@bethjolin@gmail.com</a>
+            <div class="row" style="border-bottom: 1px solid #ffffff; margin-bottom: 20px;">
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                <h3>Beth Jolin Design</h3>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3"></div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                <img src="img/svg/jB_white.svg" class="logo" alt="Logo" >
+                </div>
             </div>
-            <ul class="social">
-            <!--Social Media Layout and Placeholders-->
-            <!--For students, the images below should be updated with real svgs and links should be updated-->
-                <li>
-                    <a href="https://www.linkedin.com/in/beth-jolin-014214156/" target="_blank">
-                        <img src="img/linkedin.png" alt="LinkedIn">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.behance.net/twiinbethjeb30" target="_blank">
-                        <img src="img/behance.png" alt="Behance">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/bee_true_tou/">
-                        <img src="img/dribble.png" alt="Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/bethalina">
-                        <img src="img/github-sign.png" alt="Github">
-                    </a>
-                </li>
-            </ul>
-            <p>&copy;2023 Beth Jolin Design.</p>
-        </div>
-        
-	</footer>
-    
-          <script src="js/scripts.js"></script>
+            
+            <div class="row">
+                <div class="col-lg-3 margin-top">
+                    <p>Central Wisconsin based graphic &amp; web designer, UI/UX designer, illustrator, and nature lover.</p>
+                    <p>&copy;2023 Beth Jolin Design. <span>All rights reserved.</span></p>
+                </div>
 
- </body>
+                <div class="col-lg-3 padding-left">
+                    <p><span>Have a project in mind that you need help with? Shoot me a message at my email address. </span></p>
+
+                <p><a href="mailto:hello@bethjolin@gmail.com">hello@bethjolin@gmail.com</a></p>
+                </div>
+                <div class="col-lg-3 margin-top" style="float: right;">
+                    <ul class="social" style="float: right;" >
+                        <li >
+                            <a href="https://www.linkedin.com/in/beth-jolin-014214156/" target="_blank">
+                                <img id="linkedin" src="img/svg/white_linkedin.svg" alt="LinkedIn">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/twiinbethjeb30" target="_blank">
+                                <img id="behance" src="img/svg/white_behance.svg" alt="Behance">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/bee_true_tou/">
+                                <img id="instagram" src="img/svg/white_instagram.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/bethalina">
+                                <img id="github" src="img/svg/white_github.svg" alt="GitHub">
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+              
+
+	</footer>
+
+
+      <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+  </body>
 </html>
