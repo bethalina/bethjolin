@@ -225,11 +225,11 @@ a:focus {
 }
 
 #contact a:hover {
-    color: #7E7F86;
+    color: #6B6C72;
 }
 
 #contact a:active {
-    color: #7E7F86;
+    color: #6B6C72;
 }
 
 /* skill & tool text styling*/
@@ -585,7 +585,6 @@ ul.no-bullets {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    line-height:
 }
 
 #project .margin {
@@ -1141,15 +1140,13 @@ Large devices (1024px or larger)
             margin-right:-0px;
         }
 
-        #padding-left {
+#contact .padding-left {
             /*footer columns */
             padding-left: 50px;
             margin-top: -40px;
-
         }
 
-        #margin-top {
-            /*footer columns */
+ #contact .margin-top { /*footer columns */
             margin-top: -40px;
         }
 
@@ -1200,7 +1197,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right:auto;
     width: 100%;
-    margin-top:100px;
+    margin-top:80px;
 }
         
 /*styling 'solution' large image */
@@ -1230,7 +1227,6 @@ Large devices (1024px or larger)
     }
 
 #project .analysis-right{
-    padding-left:-80px;
     padding-top:60px;
     padding-right:0px;
     }  
@@ -1255,8 +1251,7 @@ Large devices (1024px or larger)
     width: 100%;
     margin-top:-50px;
     padding-top: 10px;
-     padding-left:0px;
-     padding-right:-100px;
+    padding-left:0px;
 }
 
 .ns-animal-helper img {
@@ -1264,7 +1259,6 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right:auto;
     width:98%;
-    padding-left:-25px;
     padding-right:0px;
 }
     
@@ -1283,7 +1277,6 @@ Large devices (1024px or larger)
     width:100%;
     padding-left:10px;
     padding-right: 0px;
-    padding-bottom:-20px;
 }
         
 /* styling large LISTEN images */        
@@ -1300,7 +1293,6 @@ Large devices (1024px or larger)
     margin-left:auto;
     margin-right:auto;
     width:100%;
-    padding-bottom:-20px;
     margin-top: -20px;
 }
         
@@ -1359,6 +1351,10 @@ Large devices (1024px or larger)
     width:100%;
 }  
         
+        .ns-wireframes-wonky {
+            margin-top: -15px;
+        } 
+        
 /*=========column mistake ========================*/
    .col-lg-4 {
     width:25%;
@@ -1402,7 +1398,7 @@ X-large devices (1440px or larger)
 
         }
 
-        #margin-top {
+#contact .margin-top {
             /*footer columns */
             margin-top: -40px;
         }
@@ -1456,7 +1452,7 @@ X-large devices (1440px or larger)
     margin-left: 30px;
     margin-right:60px;
     width: 85%;
-    margin-top:10px;
+    margin-top:30px;
     float:right;
 
 }
@@ -1487,7 +1483,6 @@ X-large devices (1440px or larger)
     }
 
 #project .analysis-right{
-    padding-left:-180px;
     padding-top:60px;
     padding-right:60px;
     }  
@@ -1511,8 +1506,7 @@ X-large devices (1440px or larger)
     width: 100%;
     margin-top:-30px;
     padding-top: 10px;
-     padding-left:25px;
-     padding-right:-100px;
+    padding-left:25px;
 }
 
 .ns-animal-helper img {
@@ -1522,7 +1516,6 @@ X-large devices (1440px or larger)
     width: 100%;
     margin-top:10px;
 padding-top: 0px;
-     padding-left:-25px;
      padding-right:20px;
 }
     
