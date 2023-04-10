@@ -609,10 +609,6 @@ ul.no-bullets {
     padding-top:20px;                
 }
 
-.shadow img {
-        -webkit-filter: drop-shadow(5px 5px 5px #999999);
-        filter: drop-shadow(5px 5px 5px #999999);
-    }
 
 /* styling headers not in columns */        
 .project-hdr-01 {
